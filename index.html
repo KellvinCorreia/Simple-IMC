@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC JS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Calculadora de IMC JavaScript</h1>
+
+      <p>
+        Tabela IMC É calculado dividindo o peso (em kg) pela altura ao quadrado
+        (em metros).
+      </p>
+      <ul>
+        <li>16.0 a 16,9 - Muito abaixo do peso</li>
+        <li>17.0 a 18,4 - Abaixo do peso</li>
+        <li>18,5 a 24,9 - Peso normal</li>
+        <li>25.0 a 29,9 - Acima do peso</li>
+        <li>30.0 a 34,9 - Obesidade grau I</li>
+        <li>35.0 a 40.0 - Obesidade grau II</li>
+        <li>40 ou mais - Obesidade grau III</li>
+      </ul>
+
+      <form action="">
+        <label for="pesoForm">Peso</label>
+        <input
+          type="number"
+          name="pesoForm"
+          id="pesoForm"
+          placeholder="Insira seu peso"
+        />
+
+        <label for="alturaForm">Altura</label>
+        <input
+          type="number"
+          name=""
+          id="alturaForm"
+          placeholder="Insira sua altura"
+        />
+
+        <button type="button" onclick="calcImc()">Enviar</button>
+        <button onclick="clearForm()" type="reset">Limpar</button>
+      </form>
+      <div id="resposta"></div>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

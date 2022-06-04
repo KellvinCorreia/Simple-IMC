@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+  font-size: 62.5%;
+  --primary-color: rgb(0, 143, 124);
+  --primary-dark: rgb(2, 85, 74);
+}
+* {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  outline: 0;
+}
+h1 {
+  font-size: 3rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  color: white;
+  max-width: 68rem;
+  margin-top: 5rem;
+  margin-inline: auto;
+  background: rgb(78, 77, 85);
+  padding: 3rem;
+  line-height: 1.3;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.7rem rgba(0, 0, 0, 0.418);
+}
+
+form label,
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+form input:focus {
+  outline: 2px solid var(--primary-color);
+}
+form button {
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+form button:hover {
+  background-color: var(--primary-dark);
+}
+section #resposta {
+  color: black;
+}
+
+#resposta {
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.orange {
+  background: orange;
+}
+.red {
+  background: red;
+}
+.yellow {
+  background: yellow;
+}
+.green {
+  background: green;
+}
